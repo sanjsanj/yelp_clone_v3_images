@@ -1,1 +1,9 @@
-hi
+Hi!
+
+<p>
+<a href="/photos/new">Add new image</a>
+</p>
+
+<% @photos.each do |photo| %>
+  <%= image_tag photo.image.url(:thumb) %>
+<% end %>
