@@ -1585,3 +1585,255 @@ Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde4
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-08 14:54:03 +0100
+
+
+Started GET "/photos" for ::1 at 2015-05-08 15:20:58 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (2.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 210ms (Views: 193.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-08 15:20:59 +0100
+
+
+Started GET "/photos/new" for ::1 at 2015-05-08 15:21:02 +0100
+Processing by PhotosController#new as HTML
+  Rendered photos/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 71ms (Views: 64.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/photos" for ::1 at 2015-05-08 15:22:47 +0100
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RAgkmGGu2UrckfrSI4O6inCF5H/61/bmQeo+eYj1y9SVjmtIP3VH/759JJTlRLJFdzqAcgv+yA3KIon4T2dy7A==", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f96c339a678 @tempfile=#<Tempfile:/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/RackMultipart20150508-47764-whbygd.jpg>, @original_filename="bowling.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"bowling.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-18axu5i.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j.jpg[0]'
+Command :: convert '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j20150508-47764-yfm32t'
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j20150508-47764-yfm32t'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j.jpg[0]'
+Command :: convert '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j20150508-47764-ej8vyp'
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-on4s3j20150508-47764-ej8vyp'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/d064ce3b9a5debe1c1dd0c74eb2ed8b820150508-47764-vlygva.jpg'
+  [1m[35mSQL (13.8ms)[0m  INSERT INTO "photos" ("image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["image_file_name", "bowling.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 73956], ["image_updated_at", "2015-05-08 14:22:47.616305"], ["created_at", "2015-05-08 14:22:47.929853"], ["updated_at", "2015-05-08 14:22:47.929853"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 391ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/photos" for ::1 at 2015-05-08 15:22:48 +0100
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.9ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-08 15:22:48 +0100
+
+
+Started GET "/photos/new" for ::1 at 2015-05-08 15:22:50 +0100
+Processing by PhotosController#new as HTML
+  Rendered photos/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for ::1 at 2015-05-08 15:23:11 +0100
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/g8dRviNoD0kVU0V3aBzA+Dtm+LRNdoGpTE/RLMKdqGfnOlRTmoNZZ9i3KRsYkDCDzSYnpt6YORXHN81V6Q4g==", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f96caaa5f10 @tempfile=#<Tempfile:/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/RackMultipart20150508-47764-1jzba9w.png>, @original_filename="week6_bowling.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"week6_bowling.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Photo"}
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-1whupwo.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj.png[0]'
+Command :: convert '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj.png[0]' -auto-orient -resize "300x300>" '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj20150508-47764-upejc7'
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj20150508-47764-upejc7'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj.png[0]'
+Command :: convert '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj.png[0]' -auto-orient -resize "100x100>" '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj20150508-47764-1v1g197'
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-18kh0vj20150508-47764-1v1g197'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/29f7c97f64913c2b86d33f5f4b786fee20150508-47764-1p26ff.png'
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["image_file_name", "week6_bowling.png"], ["image_content_type", "image/png"], ["image_file_size", 365883], ["image_updated_at", "2015-05-08 14:23:11.322780"], ["created_at", "2015-05-08 14:23:12.082678"], ["updated_at", "2015-05-08 14:23:12.082678"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 807ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/photos" for ::1 at 2015-05-08 15:23:12 +0100
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-08 15:23:12 +0100
+
+
+Started GET "/" for ::1 at 2015-05-08 15:23:56 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/sanjsanj/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos" for ::1 at 2015-05-08 15:24:03 +0100
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 160ms (Views: 157.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos" for ::1 at 2015-05-08 15:24:46 +0100
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 62ms (Views: 52.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-08 15:24:46 +0100
+
+
+Started GET "/" for ::1 at 2015-05-08 15:24:49 +0100
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-08 15:24:49 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-08 15:24:49 +0100
+
+
+Started GET "/" for ::1 at 2015-05-08 15:24:49 +0100
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/new" for ::1 at 2015-05-08 15:25:59 +0100
+Processing by PhotosController#new as HTML
+  Rendered photos/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for ::1 at 2015-05-08 15:26:06 +0100
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fD5zZrqsjuAZWC5/0gSA1eQiqLrHfUrR9MDSMEGfU0qtuDy25HcQVXu08DkUw4ga453MtzZUdDp/CGWxhg3qcg==", "photo"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f96ca1c7c18 @tempfile=#<Tempfile:/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/RackMultipart20150508-47764-15ys2je.png>, @original_filename="Screen Shot 2015-04-21 at 19.51.53.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"Screen Shot 2015-04-21 at 19.51.53.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Photo"}
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/4f0131484fac772cad5953a0fc8e820720150508-47764-8ppsmk.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil1.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil1.png[0]'
+Command :: convert '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil1.png[0]' -auto-orient -resize "300x300>" '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil120150508-47764-1o22db1'
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil120150508-47764-1o22db1'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil1.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil1.png[0]'
+Command :: convert '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil1.png[0]' -auto-orient -resize "100x100>" '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil120150508-47764-vzpc8f'
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/f703b1492f47b6fd1ef0d4e59e38b6dc20150508-47764-9bqil120150508-47764-vzpc8f'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/9k/fc_tn4c55dn29v92bskv6wqh0000gn/T/4f0131484fac772cad5953a0fc8e820720150508-47764-1fs0ixm.png'
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "photos" ("image_file_name", "image_content_type", "image_file_size", "image_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["image_file_name", "Screen_Shot_2015-04-21_at_19.51.53.png"], ["image_content_type", "image/png"], ["image_file_size", 905032], ["image_updated_at", "2015-05-08 14:26:06.852481"], ["created_at", "2015-05-08 14:26:07.703213"], ["updated_at", "2015-05-08 14:26:07.703213"]]
+  [1m[36m (8.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 921ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/photos" for ::1 at 2015-05-08 15:26:07 +0100
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-08 15:26:07 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-08 15:26:07 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-08 15:26:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-08 15:26:07 +0100
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-08 15:26:07 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-08 15:26:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-08 15:26:07 +0100
